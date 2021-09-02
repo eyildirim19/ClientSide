@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--kütüphaneyi uygulama dahil ettik....-->
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script>
+
+        // jquery'de ilk bilmemiz gereken şey selector(seçiciler).. bir yakalamk için $ ifadesi kulllanılır.
+        //$("secici").ozelliklere erişiriz
+        // id(#),class(.),element(tagAdi örn(h1,input vb.)) vb....
+        // 1yol...
+        //$(document).ready(myfunction); // döküman hazır olduğunda veya yüklendiğinde...
+        //function myfunction() {
+        //    var he1 = $("#baslik");
+        //    he1.html("adsad");
+        //}
+
+        // 2.yol...
+        $(document).ready(function () {
+            //document.getElementById("baslik");
+            var he1 = $("#baslik");
+            he1.html("ben bir başlığım....");
+
+            // element seçici
+            //document.getElementsByTagName("div");
+            $("div").html("biz bir diviz");
+
+            //document.getElementsByClassName(".paragraf");
+            var ps = $(".paragraf");
+            for (var i = 0; i < ps.length; i++) {
+                $(ps[i]).html(i + ". paragraf");
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <!--JQUREY
+        https://jquery.com/ adresinden detaylara erişebilirsiniz...
+
+        Nedir jquery=> bir javascritp kütüphanesidir. Javascriptin bir çok kütüphanesi vardır. BUnların en temeli jquery'dir.
+        Javascript kütüphaneleri javascript dili referns alınarak geliştirilmiş javascripte yetenek kazandırılmış daha kısa kodlar ile işlemlerin yapılmasını sağlayan, sayfayada javascript ile birlikte animasyon, etkileşim vb. işlemlerimizi yapmamızı sağlayan kütüphanedir..
+
+        Not: query metotlarını kullanabilmek için jquery.js dosyasını uygulamaya dahil etmelisiniz. bunu proje sağ tık yapıp manage nuget package penceresinden browse sekmesindne jquery yazarak bulunun kütüphaneyi install yaparak projeye dahil edersiniz... daha sonra kütüphanenizi uygulmaa script src ile entegre edersiniz..
+    -->
+    <h1 id="baslik"></h1>
+    <div></div>
+    <div></div>
+    <p class="paragraf"></p>
+    <p class="paragraf"></p>
+    <p class="paragraf"></p>
+</body>
+</html>
