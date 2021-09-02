@@ -1,0 +1,27 @@
+﻿/*css'de en önemli konu seçicilerdir. stil uygulamak için seçici yamak gerekir;
+
+    syntax;
+    
+    secici{
+        ozellik:deger
+    }
+
+*/
+body {
+}
+/*element seçici*/
+p {
+    color: red; /*yazı renkleri kırmızı olsun..*/
+}
+/*id seçici*/
+#FirstDiv {
+    background-color: brown; /*arkaplan rengi*/
+}
+
+#SecondDiv {
+    background-color: saddlebrown;
+}
+
+div{
+    color:white;
+}
