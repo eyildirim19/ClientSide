@@ -1,0 +1,144 @@
+﻿body {
+    margin: 0px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+#tblTemp {
+    width: 100%;
+}
+
+#Logo {
+    width: 300px;
+    float: left; /*hizalamaya soldan başla...*/
+    margin-top: 9px;
+}
+
+#SearchPanel {
+    width: 250px;
+    float: right;
+}
+
+    /*child selector*/
+    #SearchPanel input {
+        border: 0px;
+        padding-top: 4px; /*not: padding verilen elementler içeriden boşluk bıraktığı  padding yönüne doğru büyütür...*/
+        padding-bottom: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+        height: 22px; /*yükseklik hesaplarken padding topvebotom hesaplanmalı. */
+        width: 242px;
+        margin-top: 10px;
+        border-radius: 10px; /*kenarları 10px ovalleştir..*/
+        color: #0082C4;
+        font-family: fantasy;
+    }
+
+        /*inputa focuslandığında*/
+        #SearchPanel input:focus {
+            outline: none; /*dış çizgiyi yok et..*/
+        }
+
+
+/*class seçiciler.. ortak özellikler için kullanılır. Kural : sayfadaki idler unique(benzersiz) olmalıdır. Ancak html ve css kodları programala dili olmadığı için eğer bir id birden fazla elemente verilirse hata vermez. ancak standartın dışına çıkmış olursunuz. */
+
+/*class selector...*/
+.container {
+    width: 1000px;
+    /*margin özelliğinin soldan va sağdan auto verirseniz. elementler ortalanır*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    height: 59px;
+    background-color: #fafafa;
+    /*border-bottom-width:2px;
+    border-bottom-style:dotted;
+    border-bottom-color:#e8e8e8;*/
+    border-bottom: 1px solid #0082C4; /*with,style,color*/
+}
+
+#Menu {
+    width: 800px;
+}
+
+    #Menu ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #Menu ul li {
+            margin-right: 5px;
+            width: 150px;
+            display: inline-block;
+            /* not : inline elementler blok olmadıkları için genişşik kabul etmezler...genişlikleri textleri kadar olur...*/
+        }
+            #Menu ul li a {
+                height: 36px;
+                display:inline-block;
+                font-size:11px;
+                font-weight:bold;
+                padding-top:23px;
+                width:100%;
+                color:gray;
+                text-decoration:none;
+              
+                text-align:center;
+            }
+
+                #Menu ul li a:hover {
+                    background-color: #0082C4;
+                    color: white;
+                }
+
+#Action {
+    width: 200px;
+}
+
+#btnBasvur {
+    height: 59px;
+    border: none;
+    float: right;
+    background-color: #0082C4;
+    color: white;
+    cursor:pointer;
+}
+
+.LeftDiv {
+    float: left;
+}
+
+#sliderLeft{
+    width:720px;
+}
+
+#sliderContent {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+   
+  
+}
+    #sliderContent li {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding-left: 10px;
+        cursor:pointer;
+        font-size:12px;
+    }
+        #sliderContent li:hover {
+            background-color: #C0AF95;
+
+        }
+#sliderRight {
+    width: 280px;
+  
+    height: 449px;
+}
