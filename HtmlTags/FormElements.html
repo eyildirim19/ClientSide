@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <a href="Index.html">Geri Dön Geri Dön...</a>
+    <!--FORM ELEMENTLERİ SAYFAMIZDA KULLANICIDAN BİLGİ ALMAK İÇİN KULLANILAN ELEMENTLERDİR. BU ELEMENTLERE INPUT ELEMENTLERDE DENİR...-->
+    <br />
+    <!--ibnput elementi kullanıcı dan bilgi almak için kullanılan elementtir.
+        type attribute ile inputun tipi belirlenir. Kullanıdan veri hangi formatta alınacak bu belirlenir...
+        -->
+    <input type="text" /> <!--textbox-->
+    <br />
+    <input type="radio" />
+    <br />
+    <input type="checkbox" />
+    <br />
+    <input type="password" />
+    <br />
+    <input type="submit" /> <!-- Button elementidir.... tıklanmak için kullanılır...-->
+    <input type="button" /> <!-- Button elementidir.... tıklanmak için kullanılır...-->
+    <br />
+
+    <!--Form elementi inputlar veriyi sayfadan sunucuya göndermek için kullanılır...-->
+    <!--formu get ile açık, post ile gizli gönderebiliriz..Default get gönderilir...-->
+    <!--Not formdan gönderilen veriler serverdan yakalnır..-->
+    <form method="get">
+        <br />
+        <!--name özelliği kontrollere verilen isimdir. (id gibi)-->
+        <input type="text" name="txtAdi" />
+        <br />
+        <input type="text" name="txtSifre" />
+        <br />
+        <input type="submit" value="Tıkla" /> <!--Submit buttonlar formu göndermek için kullanılır...-->
+    </form>
+    <br />
+    <form method="post">
+        <br />
+        <!--name özelliği kontrollere verilen isimdir. (id gibi)-->
+        <input type="text" name="txtAdi" />
+        <br />
+        <input type="text" name="txtSifre" />
+        <br />
+        <input type="submit" value="Tıkla" /> <!--Submit buttonlar formu göndermek için kullanılır...-->
+    </form>
+    <br />
+    HTML'e dair daha fazlasını öğrenmek için <a href="https://www.w3schools.com/html/" target="_blank">tıklayınız</a>
+</body>
+</html>

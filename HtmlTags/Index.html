@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    
+    <!--Link verme işlemleri.. bir sayfadan başka bir sayfaya veya sayfa içerisindeki başka bir bölüma gitmek için kullanılır..
+        a elementinin href attribute ile gidilecek adres belirlenir...
+         a elementitinin target attribute gidilecek adresinin nerede açılacağı belirtilir..
+        -->
+    <a href="http://google.com" target="_blank">Google'de ara..</a> <!--yeni sekmede açar-->
+    <br />
+    <a href="http://google.com" target="_self">Google'de ara..</a> <!--mevcut sekmede açar-->
+    <br />
+    <a href="FormElements.html"> Form Elementleri...</a> <!--Not : eğer target belirtmezsek _self olarak açılır...
+                                                             Proje içerisindeki bir sayfaya gitmek için self, dışarıya gitmek için blank kullanınız...
+                                                             -->
+    <h1>Başlık Etiketimiz....</h1>
+    <h2>Başlık Etiketimiz....</h2>
+    <h3>Başlık Etiketimiz....</h3>
+    <h4>Başlık Etiketimiz....</h4>
+    <h5>Başlık Etiketimiz....</h5>
+    <h6>Başlık Etiketimiz....</h6>
+    <br />
+    <b>Liste etiketimiz (UL (UnOrdered List) <!-- içeriği liste formatında göstermek için)..-->.</b>
+    <ul>
+        <li>İtem 1</li>
+        <li>İtem 2</li>
+        <li>İtem 3</li>
+        <li>İtem 4</li>
+    </ul>
+    <br />
+    <b>Liste etiketimiz (OL (Order List) <!--(içerği liste formatında göstermek için)--> </b>
+    <ol>
+        <li>İtem 1</li>
+        <li>İtem 2</li>
+        <li>İtem 3</li>
+        <li>İtem 4</li>
+    </ol>
+    <br />
+
+
+    <!--Tablolar (İçeriği düzenli birşekilde satır ve sütunlardan oluşturmak için kullanılır. sql server,windows form, wpf daki datagrid veya tablo yapıları gibi)
+            tablolar çok sık kullandığımız html elemenleridir...
+        -->
+    <!--tr => row    -->
+    <!--td => column -->
+    <!--th => head column-->
+    <table border="1">
+        <tr>
+            <th>Adı</th>
+            <th>SoyAdı</th>
+        </tr>
+        <tr>
+            <td>Kaan</td>
+            <td>Meşe</td>
+        </tr>
+        <tr>
+            <td>Ekrem</td>
+            <td>Yıldırım</td>
+        </tr>
+        <tr>
+            <td>Öykü</td>
+            <td>Yakupoğlu</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <!--Kural : tablolarda satırlardaki sütun sayıları birbirine eşit olmak zorundadır...Eğer sütunlar birbirine eşit olmayacaksa eşit olmayan sütunları colspan ile birleştirebilirsiniz-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="3">Öğrenciler</th>
+            </tr>
+            <tr>
+                <th>Adı</th>
+                <th>SoyAdı</th>
+                <th>Not</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Emre</td>
+                <td>Kayaoğlu</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Ferit</td>
+                <td>Ata</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Muhammet</td>
+                <td>Aydemir</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">Genel Toplam</td>
+                <td> 130 </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+    <table border="1">
+        <tr>
+            <td rowspan="5">Öğrenciler</td>
+            <td>Adı</td>
+            <td>SoyAdı</td>
+            <td>Not</td>
+        </tr>
+        <tr>
+            <td>Ferit</td>
+            <td>Ata</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Muhammet</td>
+            <td>Aydemir</td>
+            <td>20</td>
+        </tr>
+    </table>
+</body>
+</html>
