@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        function Yakala() {
+            // tag seçici...
+            var h1ler = document.getElementsByTagName("h1");
+
+            for (var i = 0; i < h1ler.length; i++) {
+                h1ler[i].innerHTML = i;
+            }
+
+            // class seçiciler..
+            var boxxx = document.getElementsByClassName("box");
+
+            var isimler = new Array();
+            isimler[0] = "Kaan";
+            isimler[1] = "Öykü";
+
+            for (var i = 0; i < isimler.length; i++) {
+                boxxx[i].innerHTML = isimler[i];
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1 id="baslik"></h1>
+    <h1></h1>
+    <h1></h1>
+
+    <br />
+    <div class="box"></div>
+    <div class="box"></div>
+    <!--javascript komutları elementlerin sonradan yüklenmesindne ötürü sayfada body'in en alt kısmına yazılır-->
+    <script>
+
+        // id seçici
+        document.getElementById("baslik").innerHTML = "Ben bir başlığım....";
+    </script>
+
+</body>
+</html>

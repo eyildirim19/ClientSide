@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .redColor {
+            color: red;
+        }
+        .blackColor {
+            color: black;
+        }
+    </style>
+    <script>
+        function MesajVer() {
+            console.log("bu bir mesaj");
+        }
+        function UzerineGeldi() {
+            var btn = document.getElementById("btnBet");
+            btn.className = "redColor";
+        }
+        function UzerindenGitti() {
+            var btn = document.getElementById("btnBet");
+            btn.className = "blackColor";
+        }
+    </script>
+</head>
+<body>
+    <!--html eventlar javascript fınksiyonlarını tetiklemek için kullanılır..-->
+    <input type="button" value="Tıkla" onclick="MesajVer()" />
+    <br />
+    <h1 onclick="MesajVer()">Bu bir başlık</h1>
+    <br />
+    <input id="btnBet" type="button" value="ben bir buttonum" onmouseover="UzerineGeldi()" onmouseout="UzerindenGitti()" />
+</body>
+</html>

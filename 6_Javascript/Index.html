@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!--javascript kodları script tagleri içerisine yazılır...-->
+    <script>
+        //yorum sayırı
+        // değişken tanımlama. javascripte değişkenler var ile tanımlanır..tip değer atadığınıda oluşur...
+        var isim;
+        var soyisim = "yıldırım";
+        isim = "ekrem";
+        var sayi1 = 4, sayi2 = 3;
+        var sonuc = sayi1 + sayi2;
+
+        // ekrana mesaj verelim..
+        //alert("işlem sonucu " + sonuc);
+        console.log("işlem sonucu " + sonuc);
+
+        // karar yapıları
+        if (1 > 0) {
+            console.log("1. sayı büyük"); // bu çıktı tarayıcımızın console penceresinde görünecektir. console penceresini sağ tık yapıp inspect veya incele veya tarayıcının kısa yolu(f12 ile açabiliriz)
+        }
+        // console 10 defa merhaba javascript mesajı verelim...
+        for (var i = 0; i < 10; i++) {
+            console.log(i + ". merhaba javascript");
+        }
+        var dizi = new Array();
+        dizi[0] = "Öykü";
+        dizi[1] = "Kaan";
+        dizi[2] = "Ekrem";
+        dizi[3] = "Emre";
+        dizi[4] = "Muhammet";
+        // javascript break point... eğer tarayıcınızda console pencerisi açıksa debugger komutu ilerlemek için sizi bekler. c# dilindeki debug mode gibi...
+        var sayac = 0;
+        while (sayac < dizi.length) {
+
+            debugger; 
+            console.log(dizi[sayac]);
+            sayac++;
+        }
+    </script>
+</head>
+<body>
+
+    <!--
+        client tabanlı çalışan, sayfanın kullanıcı ile etkişelimini sağlayan clientta bazı işlemler için sayfayı servera göndermeden performans kaybını minimize etmek için kullanılan programlama dilidir. Javascript html ve css 'ye yetenek kazandırmak için kullanılır...
+
+        Syntax olarak c#, java dillerine benzer. onlar kadar gelişmiş değildir.. yani basit bir dildir..
+
+        Javascript dili internal(sayfa içeridinde) ve extarnal (sayfa dışında) yazılabilir...
+
+        eğer internal javascript yazacacak sayfanın head veya body'sine yazabiliriz. (duruma göre değişir..)
+
+        NOT : web dünyasında javascript dili çok önemlidir. mutlaka bilmemiz gerekir.
+        -->
+
+
+</body>
+</html>
